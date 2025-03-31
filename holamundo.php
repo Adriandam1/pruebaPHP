@@ -6,6 +6,7 @@
 </head>
 
 <body>
+
 <?php
 	echo "HOLA BIENVENIDO actualizate con un f5 lamp!";
 	//salto lineaecho "<br>";
@@ -30,6 +31,27 @@
 	print "<br/>Si el booleano es False no mostrara nada: ". $ProfesorFalse;
 	print "<br/>Si el booleano es verdadero sale: " . json_encode ($ProfesorTrue);
 	print "<br/>Si el booleano es falso sale: " . json_encode ($ProfesorFalse);
+	echo "<br/>";
+
+	// Constantes
+
+	const PI = 3.14;
+	// PI == 100; // Removed as it serves no purpose
+	echo PI;
+
+	define ("nombre","pepe");
+	// nombre == "pepa"; // Removed as it serves no purpose
+	echo "<br/>";
+	echo nombre;
+	echo "<br/>";
+
 ?>
+<a href="destino.php?nombre=Adrian&cargo=Presidente">Pasar las variables destino a .php</a>
+<?php
+	// Variables paso URL
+
+
+?>
+
 </body>
 </html>
