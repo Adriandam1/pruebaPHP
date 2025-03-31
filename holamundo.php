@@ -9,6 +9,7 @@
 <?php
 	echo "HOLA BIENVENIDO actualizate con un f5 lamp!";
 	//salto lineaecho "<br>";
+// cambio desde remoto
 	// comentario una sola linea
 	/*Comentarios varias lineas */
 	# Comentario consola
