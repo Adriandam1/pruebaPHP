@@ -44,11 +44,44 @@
 	echo "<br/>";
 	echo nombre;
 	echo "<br/>";
-
+	// Variables paso URL a href
 ?>
 <a href="destino.php?nombre=Adrian&cargo=Presidente">Pasar las variables destino a .php</a>
 <?php
-	// Variables paso URL
+
+
+	// Arrays indexados y conceptos
+	$dias = array("Lunes","Martes","Miercoles","Jueves","Viernes","Sabado", "Domingo");
+	$numeros = array (10, 20, 30, 40);
+	// Cuando a un array solo le paso un dato que es un numero, estoy haciendo un array vacio con x posiciones, en este caso 10 posiciones en las que no hay nada, solo esta reservando el espacio
+	$nombre = array(10);
+	// si quiero generar un array vacio:
+	$datos = array();
+	// array sintaxsis corta:
+	$valores = [10, 20, 30, 40];
+
+	// como accedo a los elementos, escribo el nombre del array y entre corchetes la posicion:
+	echo "<br/>";
+	echo $dias[2];
+	// var_dump permite mostrar el tipo de variable de una variable definida y su contenido
+	echo "<br/>";
+	var_dump ($dias);
+	echo "<br/>";
+	var_dump ($numeros);
+	echo "<br/>";
+
+	// Arrays asociativos (ojito que los String son caseSensitive)
+	$navegadores = array("navegador1" => "Chrome", "navegador2" => "Firefox", "navegador3" => "Safari");
+	// Puedo hacer arrays con valores de distintos tipos: string, int, bool
+	$datos2 = array ("nombre" => "Adrian", "puntuacion" => 100, "estudiantes" => true);
+
+	echo "Navegador 3: " . $navegadores['navegador3'];
+
+	echo "<br/>";
+
+	echo "Nombre: " . $datos2["nombre"], "<br/>Puntuacion: " . $datos2['puntuacion'], "<br/>Estudiante? " . $datos2['estudiantes'];
+
+
 
 
 ?>
